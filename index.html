@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Reservation - HINDA AKIF ANSARI</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        body {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+            line-height: 1.4;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .trip-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .passenger-info {
+            margin-bottom: 20px;
+        }
+        
+        .reservation-codes {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #f5f5f5;
+            border-radius: 4px;
+        }
+        
+        .flight-segment {
+            margin-bottom: 30px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        
+        .segment-header {
+            background-color: #f0f0f0;
+            padding: 10px 15px;
+            font-weight: bold;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .flight-details {
+            padding: 15px;
+        }
+        
+        .airline-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+        
+        .route-details {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+        
+        .departure, .arrival {
+            width: 45%;
+        }
+        
+        .airport-code {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .time {
+            font-size: 16px;
+            font-weight: bold;
+        }
+        
+        .flight-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 4px;
+        }
+        
+        .info-item {
+            text-align: center;
+        }
+        
+        .info-label {
+            font-size: 12px;
+            color: #666;
+        }
+        
+        .info-value {
+            font-weight: bold;
+        }
+        
+        .passenger-details {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px dashed #ddd;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            padding-top: 15px;
+            border-top: 1px solid #ddd;
+            color: #666;
+            font-size: 14px;
+        }
+        
+        @media print {
+            body {
+                padding: 0;
+            }
+            
+            .flight-segment {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="trip-title">25 AUG 2025 ▶ 25 AUG 2025 TRIP TO JEDDAH, SAUDI ARABIA</div>
+        <div class="passenger-info">PREPARED FOR<br><strong>ANSARI/HINDA AKIF</strong></div>
+    </div>
+    
+    <div class="reservation-codes">
+        <div><strong>RESERVATION CODE:</strong> FKJNIT</div>
+        <div><strong>AIRLINE RESERVATION CODE:</strong> DXEYUF (GF)</div>
+        <div><strong>DEMATER.COM</strong><br>920005511</div>
+    </div>
+    
+    <!-- First Flight Segment -->
+    <div class="flight-segment">
+        <div class="segment-header">DEPARTURE: MONDAY 25 AUG<br><small>Please verify flight times prior to departure</small></div>
+        
+        <div class="flight-details">
+            <div class="airline-info">
+                <div><strong>GULF AIR<br>GF 0057</strong></div>
+                <div>
+                    <div class="info-label">Duration:</div>
+                    <div class="info-value">3hr(s) 30min(s)</div>
+                </div>
+                <div>
+                    <div class="info-label">Cabin:</div>
+                    <div class="info-value">Economy</div>
+                </div>
+                <div>
+                    <div class="info-label">Status:</div>
+                    <div class="info-value">Confirmed</div>
+                </div>
+            </div>
+            
+            <div class="route-details">
+                <div class="departure">
+                    <div class="airport-code">BOM</div>
+                    <div>MUMBAI, INDIA</div>
+                    <div class="time">Departing At: 06:30</div>
+                    <div>Terminal: TERMINAL 2 DOM AND INTL</div>
+                </div>
+                
+                <div style="text-align: center; width: 10%; padding-top: 20px;">→</div>
+                
+                <div class="arrival">
+                    <div class="airport-code">BAH</div>
+                    <div>BAHRAIN, BAHRAIN</div>
+                    <div class="time">Arriving At: 07:30</div>
+                    <div>Terminal: Not Available</div>
+                </div>
+            </div>
+            
+            <div class="flight-info">
+                <div class="info-item">
+                    <div class="info-label">Aircraft:</div>
+                    <div class="info-value">AIRBUS INDUSTRIE A321 JET</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">Distance:</div>
+                    <div class="info-value">1500 Miles</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">Meals:</div>
+                    <div class="info-value">Breakfast</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">Est. emission:</div>
+                    <div class="info-value">172.48 kg CO2</div>
+                </div>
+            </div>
+            
+            <div class="passenger-details">
+                <div>
+                    <div class="info-label">Passenger Name:</div>
+                    <div class="info-value">ANSARI/HINDA AKIF</div>
+                </div>
+                <div>
+                    <div class="info-label">Seats:</div>
+                    <div class="info-value">Check-In Required</div>
+                </div>
+                <div>
+                    <div class="info-label">eTicket Receipt(s):</div>
+                    <div class="info-value">0722999963076</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Second Flight Segment -->
+    <div class="flight-segment">
+        <div class="segment-header">DEPARTURE: MONDAY 25 AUG<br><small>Please verify flight times prior to departure</small></div>
+        
+        <div class="flight-details">
+            <div class="airline-info">
+                <div><strong>GULF AIR<br>GF 0171</strong></div>
+                <div>
+                    <div class="info-label">Duration:</div>
+                    <div class="info-value">2hr(s) 25min(s)</div>
+                </div>
+                <div>
+                    <div class="info-label">Cabin:</div>
+                    <div class="info-value">Economy</div>
+                </div>
+                <div>
+                    <div class="info-label">Status:</div>
+                    <div class="info-value">Confirmed</div>
+                </div>
+            </div>
+            
+            <div class="route-details">
+                <div class="departure">
+                    <div class="airport-code">BAH</div>
+                    <div>BAHRAIN, BAHRAIN</div>
+                    <div class="time">Departing At: 10:05</div>
+                    <div>Terminal: Not Available</div>
+                </div>
+                
+                <div style="text-align: center; width: 10%; padding-top: 20px;">→</div>
+                
+                <div class="arrival">
+                    <div class="airport-code">JED</div>
+                    <div>JEDDAH, SAUDI ARABIA</div>
+                    <div class="time">Arriving At: 12:30</div>
+                    <div>Terminal: TERMINAL 1</div>
+                </div>
+            </div>
+            
+            <div class="flight-info">
+                <div class="info-item">
+                    <div class="info-label">Aircraft:</div>
+                    <div class="info-value">AIRBUS INDUSTRIE A321 JET</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">Distance:</div>
+                    <div class="info-value">794 Miles</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">Meals:</div>
+                    <div class="info-value">Snack</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">Est. emission:</div>
+                    <div class="info-value">125.65 kg CO2</div>
+                </div>
+            </div>
+            
+            <div class="passenger-details">
+                <div>
+                    <div class="info-label">Passenger Name:</div>
+                    <div class="info-value">ANSARI/HINDA AKIF</div>
+                </div>
+                <div>
+                    <div class="info-label">Seats:</div>
+                    <div class="info-value">Check-In Required</div>
+                </div>
+                <div>
+                    <div class="info-label">eTicket Receipt(s):</div>
+                    <div class="info-value">0722999963076</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <div>ALMATAR.COM</div>
+        <div>920005511</div>
+    </div>
+</body>
+</html>
